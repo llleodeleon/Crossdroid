@@ -7,5 +7,18 @@
     android:id="@+id/mainFragment"
     android:name="dk.shape.crossdroid.MainFragment"
     android:label="fragment_main"
-    tools:layout="@layout/fragment_main" />
+    tools:layout="@layout/fragment_main" >
+
+
+    <action
+      android:id="@+id/action_react"
+      app:destination="@id/mainReactActivity" />
+  </fragment>
+
+
+
+  <activity
+    android:id="@+id/mainReactActivity"
+    android:name="dk.shape.crossdroid.MainReactActivity"
+    android:label="react" />
 </navigation>

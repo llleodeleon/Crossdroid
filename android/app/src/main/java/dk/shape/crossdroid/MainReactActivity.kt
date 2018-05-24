@@ -21,7 +21,7 @@ class MainReactActivity : ReactActivity(), DefaultHardwareBackBtnHandler {
     private var mReactRootView: ReactRootView? = null
     private lateinit var mReactInstanceManager: ReactInstanceManager
 
-    override fun onCreate(savedInstanceState: Bundle) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         mReactRootView = ReactRootView(this)

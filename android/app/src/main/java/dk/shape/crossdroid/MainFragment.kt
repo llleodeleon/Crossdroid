@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.toast
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_main.*
 
 /**
@@ -24,9 +25,9 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        button.setOnClickListener {
-            it.context.toast("YAAAAAAY")
-        }
+        button.setOnClickListener (
+                Navigation.createNavigateOnClickListener(R.id.action_react)
+        )
     }
 
 }
