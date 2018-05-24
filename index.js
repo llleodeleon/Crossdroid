@@ -5,7 +5,7 @@ import {AppRegistry, StyleSheet, Text, View} from 'react-native';
 class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} >
         <Text style={styles.hello}>Hello, World</Text>
       </View>
     );
@@ -13,6 +13,7 @@ class App extends React.Component {
 }
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "red",
     flex: 1,
     justifyContent: 'center',
   },
