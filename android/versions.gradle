@@ -51,10 +51,20 @@ lifecycle.java8 = "android.arch.lifecycle:common-java8:$versions.lifecycle"
 lifecycle.compiler = "android.arch.lifecycle:compiler:$versions.lifecycle"
 deps.lifecycle = lifecycle
 
+def react = [:]
+react.native = "com.facebook.react:react-native:+"
+deps.react = react
+
 ext.deps = deps
 
-static def addRepos(RepositoryHandler handler) {
+
+def addRepos(RepositoryHandler handler) {
     handler.google()
     handler.jcenter()
+    handler.mavenLocal()
+    handler.maven {
+        // All of React Native (JS, Android binaries) is installed from npm
+        url "$rootDir/../node_modules/react-native/android"
+    }
 }
 ext.addRepos = this.&addRepos

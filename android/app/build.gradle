@@ -32,4 +32,5 @@ dependencies {
     implementation deps.constraint_layout
     implementation deps.navigation.runtime
     implementation deps.navigation.fragment
+    implementation deps.react.native
 }

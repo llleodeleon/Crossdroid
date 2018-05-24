@@ -64,3 +64,9 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
