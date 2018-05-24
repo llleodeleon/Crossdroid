@@ -5,13 +5,15 @@ versions.kotlin = "1.2.41"
 versions.navigation = "1.0.0-alpha01"
 versions.lifecycle = "1.1.1"
 versions.support = "27.1.1"
+versions.ktx = "0.3"
 versions.android_gradle_plugin = "3.2.0-alpha15"
 versions.constraint_layout = "1.0.2"
 def deps = [:]
 
 def kotlin = [:]
-kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin"
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
 kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+kotlin.ktx = "androidx.core:core-ktx:$versions.ktx"
 deps.kotlin = kotlin
 
 def support = [:]
