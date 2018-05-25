@@ -27,7 +27,6 @@ android {
 }
 
 dependencies {
-    compile project(':lottie-react-native')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation deps.kotlin.stdlib
     implementation deps.kotlin.ktx
@@ -38,7 +37,6 @@ dependencies {
     implementation deps.navigation.runtime
     implementation deps.navigation.fragment
     implementation deps.react.native
-    implementation deps.lottie
 }
 
 // Run this once to be able to run the application with BUCK

@@ -1,7 +1,6 @@
 package dk.shape.crossdroid
 
 import android.app.Application
-import com.airbnb.android.react.lottie.LottiePackage
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactNativeHost
 import com.facebook.react.ReactPackage
@@ -11,16 +10,10 @@ import com.facebook.soloader.SoLoader
 class CrossApp: Application(), ReactApplication {
 
     private val mReactNativeHost = object : ReactNativeHost(this) {
-        override fun getUseDeveloperSupport(): Boolean {
-            return BuildConfig.DEBUG
-        }
+        override fun getUseDeveloperSupport() = BuildConfig.DEBUG
 
-        override fun getPackages(): List<ReactPackage> {
-            return listOf(
-                    MainReactPackage(),
-                    LottiePackage()
-            )
-        }
+        override fun getPackages()= listOf(
+                    MainReactPackage())
 
         override fun getJSMainModuleName() = "index"
     }
