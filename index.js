@@ -13,7 +13,7 @@ class App extends React.Component {
 }
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "red",
+    backgroundColor: "black",
     flex: 1,
     justifyContent: 'center',
   },
