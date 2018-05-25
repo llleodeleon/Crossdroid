@@ -1,6 +1,7 @@
 package dk.shape.crossdroid
 
 import android.app.Application
+import com.airbnb.android.react.lottie.LottiePackage
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactNativeHost
 import com.facebook.react.ReactPackage
@@ -16,7 +17,8 @@ class CrossApp: Application(), ReactApplication {
 
         override fun getPackages(): List<ReactPackage> {
             return listOf(
-                    MainReactPackage()
+                    MainReactPackage(),
+                    LottiePackage()
             )
         }
 
